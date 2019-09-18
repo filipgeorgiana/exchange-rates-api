@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset = "ISO-8859-1" />
+        <link href = "css/styles.css" rel = "stylesheet"/>
+        <title>Value converter</title>
+
+        <style>
+            h1{
+                font-size: 25px;
+                font-family: SansSerif;
+                color: #2C2A2A;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>
+                <p> Item: <span th:text="${item}"> </span> </p>
+                <p> Value:   <span th:text="${value}"> </span> <span th:text="${baseCurrency}"> </span> </p>
+                <p> Value in <span th:text="${symbol}" />: <span th:text="${convertedValue}" /> </p>
+            </h1>
+        </div>
+    </body>
+</html>
